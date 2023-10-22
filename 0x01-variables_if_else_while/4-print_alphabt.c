@@ -13,7 +13,10 @@ char character = 'a';
 while (character <= 'z')
 {
 if ((character == 'q') || (character == 'e'))
+{
+character++;
 continue;
+}
 putchar(character);
 character++;
 }
