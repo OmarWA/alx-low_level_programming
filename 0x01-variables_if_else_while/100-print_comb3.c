@@ -8,7 +8,7 @@ int main(void)
 {
 
 int tens = 0x30;
-int units = tens;
+int units = 0x31;
 
 while (tens < 0x39)
 {
