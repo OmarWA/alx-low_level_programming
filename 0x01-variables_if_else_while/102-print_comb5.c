@@ -6,12 +6,7 @@
  */
 int main(void)
 {
-int units1, units2;
-int tens1, tens2;
-units1 = 0x31;
-units2 = 0x30;
-tens1 = 0x30;
-tens2 = 0x30;
+int units1 = 0x31, units2 = 0x30, tens1 = 0x30, tens2 = 0x30;
 while (tens2 <= 0x39)
 {
 while (units2 <= 0x39)
@@ -20,7 +15,7 @@ while (tens1 <= 0x39)
 {
 while (units1 <= 0x39)
 {
-if ((tens2 == tens1) &&(units2 == units1))
+if ((tens2 == tens1) && (units2 == units1))
 {
 units1++;
 continue;
