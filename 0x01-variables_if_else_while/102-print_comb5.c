@@ -4,8 +4,8 @@ int main(void)
 {
   int units1,units2;
   int tens1, tens2;
-
-  units1 = 0x30;
+  /*Number format: tens2_units2 tens1_units1*/
+  units1 = 0x31;
   units2 = 0x30;
 
   tens1 = 0x30;
@@ -38,7 +38,8 @@ int main(void)
 	      units1 = 0x30;
 	    }
 	  units2++;
-	  tens1 = 0x30;
+	  tens1 = tens2;
+	  units1 = units2 + 1;
 	}
       tens2++;
       units2 = 0x30;
