@@ -8,6 +8,7 @@
  */
 int print_last_digit(int number)
 {
+number = (number < 0) ? (-1 * number) : number;
 _putchar(0x30 /* equivalent to '0' */ + (abs(number) % 10));
 return (abs(number) % 10);
 }
