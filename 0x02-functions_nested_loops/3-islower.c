@@ -8,7 +8,7 @@
  *
  * Return: 1 if c is a lowercase character; 0 otherwise
  */
-int _islower(int c);
+int _islower(int c)
 {
 if ((c >= 0x61) && (c <= 0x7A))
 return (1);
