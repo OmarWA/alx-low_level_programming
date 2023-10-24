@@ -8,7 +8,7 @@
  */
 int _isalpha(int c)
 {
-if (((c >= 0x61) && (c <= 0x7A)) || ((c >= 41) && (c <= 5A)))
+if (((c >= 0x61) && (c <= 0x7A)) || ((c >= 0x41) && (c <= 0x5A)))
 return (1);
 else
 return (0);
