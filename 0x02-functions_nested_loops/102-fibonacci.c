@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - the entry point of the program
+ * Return: 0 upon successful execution of the program
+ */
+int main(void)
+{
+int a = 1, b = 2, next, count = 2;
+printf("%d, %d, ", a, b);
+while (count < 50)
+{
+next = a + b;
+if (count < 49)
+{
+printf("%d, ", next);
+}
+else
+{
+printf("%d\n", next);
+}
+a = b;
+b = next;
+count++;
+}
+return (0);
+}
