@@ -1,0 +1,40 @@
+#include "main.h"
+
+/**
+ * times_table - prints the times table of 9
+ * Return: n/a
+ */
+void times_table(void)
+{
+int number = 0, iterator = 0;
+int product = 0, product_tens = 0, product_units = 0;
+while (number <= 9)
+{
+iterator = 0;
+while(iterator <= 9)
+{
+product = number * iterator;
+product_units = product % 10;
+product_tens = ((product - product_units) / 10);
+if (iterator == 0)
+goto SKIP;
+if (product_tens == 0)
+_putchar(' ');
+else
+_putchar('0' + product_tens);
+SKIP:
+_putchar('0' + product_units);
+if (iterator == 9)
+{
+iterator++;
+continue;
+}
+_putchar(',');
+_putchar(' ');
+iterator++;
+}
+_putchar('\n');
+number++;
+}
+return;
+}
