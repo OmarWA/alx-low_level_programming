@@ -7,7 +7,7 @@
 void jack_bauer(void)
 {
 int hours_units = 0, hours_tens = 0, minutes_units = 0, minutes_tens = 0;
-while (hours_tens < 3)
+while (hours_tens < 2)
 {
 hours_units = 0;
 while (hours_units < 10)
