@@ -11,6 +11,7 @@ char iterator = 1;
 
 while (iterator <= 10)
 {
+character = 'a';
 while (character <= 'z')
 {
 _putchar(character);
