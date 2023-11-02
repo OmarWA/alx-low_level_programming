@@ -26,7 +26,7 @@ leap_year = 1;
 if (leap_year)
 {
 
-if (month > 2 && day > 60)
+if (month > 2 || day > 60)
 day++;
 
 printf("Day of the year: %d\n", day);
