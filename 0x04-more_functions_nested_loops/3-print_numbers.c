@@ -10,6 +10,7 @@ char counter = '0';
 while (counter <= '9')
 {
 _putchar(counter);
+_putchar('\n');
 counter++;
 }
 return;
