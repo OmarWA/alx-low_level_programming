@@ -1,0 +1,1 @@
+Here I attempt more tasks about functions and loops.
