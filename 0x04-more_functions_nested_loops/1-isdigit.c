@@ -1,0 +1,9 @@
+/**
+ * _isdigit - checks whether @c is a digit or not
+ * @c: an integer to be checked
+ * Return: 1 if @c corresponds to a decimal digit in ascii, 0 otherwise
+ */
+int _isdigit(int c)
+{
+return (((c >= 0x30) &&  (c <= 0x39)) ? 1 : 0);
+}
