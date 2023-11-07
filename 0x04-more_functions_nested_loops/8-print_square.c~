@@ -1,0 +1,20 @@
+#include "main.h"
+
+
+void print_square(int size)
+{
+  int squareSize, squareLength, squareWidth = size;
+  while (squareLength > 0)
+    {
+      squareWidth = squareSize;
+      while (squareWidth > 0)
+	{
+	  _putchar('#');
+	  squareWidth--;
+	}
+      _putchar('\n');
+      squareLength--;
+    }
+
+  return;
+}
