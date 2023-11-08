@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/**
+ * main - the entry point of the program
+ * Return: 0 upon successful completion of the program
+ */
+int main(void)
+{
+int iterator = 1;
+while (iterator <= 100)
+{
+if (((iterator % 15) == 0 ? "FizzBuzz" : (iterator % 5) == 0 ? "Buzz" : (iterator % 3) == 0 ? "Fizz" : "") == "")
+printf("%d ", iterator);
+else
+printf("%s ", (iterator % 15) == 0 ? "FizzBuzz" : (iterator % 5) == 0 ? "Buzz" : (iterator % 3) == 0 ? "Fizz" : "");
+iterator++;
+}
+printf("\n");
+return (0);
+}
