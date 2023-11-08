@@ -13,6 +13,13 @@ if (((iterator % 15) == 0 ? "FizzBuzz" : (iterator % 5) == 0 ? "Buzz" :
 (iterator % 3) == 0 ? "Fizz" : "") == "")
 printf("%d ", iterator);
 else
+if (iterator == 100)
+{
+printf("%s", (iterator % 15) == 0 ? "FizzBuzz" :
+(iterator % 5) == 0 ? "Buzz" : (iterator % 3) == 0 ? "Fizz" : "");
+iterator++;
+continue;
+}
 printf("%s ", (iterator % 15) == 0 ? "FizzBuzz" :
 (iterator % 5) == 0 ? "Buzz" : (iterator % 3) == 0 ? "Fizz" : "");
 iterator++;
