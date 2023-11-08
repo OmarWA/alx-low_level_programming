@@ -1,0 +1,36 @@
+#include "main.h"
+
+/**
+ * print_triangle - prints a trianlge skewed to the right
+ * @size: the number of lines of which the triangle is made from
+ * Return: N/A
+ */
+void print_triangle(int size)
+{
+int triangleSize = size, hashesCounter = 1,
+spacesCounter = size - hashesCounter;
+
+if (size <= 0)
+{
+_putchar('\n');
+return;
+}
+while (triangleSize > 0)
+{
+while (spacesCounter > 0)
+{
+_putchar(' ');
+spacesCounter--;
+}
+while (hashesCounter > 0)
+{
+_putchar('#');
+hashesCounter--;
+}
+_putchar('\n');
+triangleSize--;
+hashesCounter = (size - triangleSize) +1;
+spacesCounter = size - hashesCounter;
+}
+return;
+}
