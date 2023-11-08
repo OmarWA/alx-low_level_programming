@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - the entry point of the program
@@ -9,8 +10,8 @@ int main(void)
 int iterator = 1;
 while (iterator <= 100)
 {
-if (((iterator % 15) == 0 ? "FizzBuzz" : (iterator % 5) == 0 ? "Buzz" :
-(iterator % 3) == 0 ? "Fizz" : "") == "")
+if (strcmp(((iterator % 15) == 0 ? "FizzBuzz" : (iterator % 5) == 0 ? "Buzz" :
+(iterator % 3) == 0 ? "Fizz" : ""), "") == 0)
 printf("%d ", iterator);
 else
 if (iterator == 100)
