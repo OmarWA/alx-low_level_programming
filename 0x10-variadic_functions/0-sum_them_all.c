@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include "main.h"
 
 /**
  * sum_them_all - a funciton that prints the sum of variable number of numbers
